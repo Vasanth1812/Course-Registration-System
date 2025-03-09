@@ -1,0 +1,42 @@
+<head>
+    <script type="text/javascript" src="script.js"></script>
+   <style>
+    table{
+        border-style: none;
+        margin-top: 20px;
+    }
+    table,th{
+        padding: 20px;
+        font-size: 20px;
+    }
+    td{
+        background-color: aliceblue;
+    }
+    body{
+        padding: 50px;
+    }
+   </style>
+    <body>
+        
+        <table align="center" border="1">
+            <tr align="center" style="background-color: lightgreen;">
+                <th width="100">Id</th>
+                <th width="100">Name</th>
+                <th width="250">Email Id</th>
+                <th width="150">Course Name</th>
+                <th width="100">Delete</th>
+            </tr>
+
+            <tbody align="center" id="enrolledtable"></tbody>
+        </table>
+        
+        <script type="text/javascript">
+            window.onload = function(){
+                enrolledCourses();
+            };
+            
+        </script>
+    </body>
+
+
+</head>

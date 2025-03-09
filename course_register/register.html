@@ -1,0 +1,70 @@
+<html>
+
+
+<head>
+   <title>Register a course</title>
+   <style>
+    body{
+        background-color: black;
+        text-align: center;
+    }
+    h1{
+        margin-top: 30px;
+    }
+    form{
+        margin: auto;
+        margin-top: 60px;
+        padding: 40px;
+        width: 400px;
+        background-color: aliceblue;
+    }
+    input,select,button{
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+    button{
+        background-color: rgb(31, 199, 25);
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(8, 153, 44);
+    }
+   </style>
+
+</head>
+
+<body>
+        
+    <h1  style="color: white;">KickStart your career with an exciting course</h1>
+
+    <form id="myform" action="http://localhost:8080/courses/register" method="post">
+
+        <label class="form-label" for="name">Enter your name</label><br>
+        <input type="text" name="name"> <br> <br>
+
+        <label for="email">Enter your emailId</label><br>
+        <input type="email" name="emailId"> <br> <br>
+
+        <label for="course">choose a course</label><br>
+        <select name="courseName" id="course">
+            <option value="Java essentials">Java essentials</option>
+            <option value="Python for ML">Python for ML</option>
+            <option value="Spring Boot">Spring Boot</option>
+            <option value="c++">c++</option>
+            <option value="Full Stack">Full Stack</option>
+            <option value="Data Scientist">Data Scientist</option>
+            <option value="AI">AI</option>
+        </select>
+        <br> <br>
+
+        <button>Submit</button>
+
+    </form>
+
+</body>
+
+</html>
